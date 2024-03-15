@@ -25,7 +25,7 @@ export default async function plumberDesc({params}:{params:{slug:string}}){
                 {/* we make the span element block, our text to be centered, let the text be blue color
                 and font to be semibold, it should be wide and then text should be in capital letters */}
                 <span className="block text-base text-center text-primary font-semibold tracking-wide uppercase">
-                    Willy Mukasa Information
+                    {data.name} Information
                 </span>
                 {/* margin on top of 2, margin should be in block text should be 3xl leading should be 8 
                 font should be bold  tracking should be tight*/}
