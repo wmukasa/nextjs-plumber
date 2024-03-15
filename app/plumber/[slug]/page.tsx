@@ -1,6 +1,9 @@
 import { fullPlumberInfo } from "@/app/lib/interface";
 import { client, urlFor } from "@/app/lib/sanity"
 import Image from "next/image";
+
+export const revalidate = 30 // revalidate at most 30minutes
+
 async function getData(slug:string){
     const query = `
     *[_type =='plumber' && slug.current =='${slug}']{

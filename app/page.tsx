@@ -5,6 +5,9 @@ import Image from "next/image";
 import Navbar from "./components/Navbar";
 import { simplegetPro } from "./lib/interface";
 import { client, urlFor } from "./lib/sanity";
+
+export const revalidate = 30 // revalidate at most 30minutes
+
 async function getData(){
   const query = `
   *[_type == 'plumber'] | order(_createdAt asc){
